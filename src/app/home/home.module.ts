@@ -6,10 +6,11 @@ import { SignInComponent } from './signin/signIn.component';
 e não no template. Isto é, programaremos as regras de validação, e por consequência
 teremos type checking, autocomplete, tudo que o TypeScript tem a nos oferecer.*/
 import { ReactiveFormsModule} from '@angular/forms' //  capacidade de lidar com diversos casos de validação em nosso código.
+import { VMessageModule } from '../shared/components/vmessage/vmessage.modele';
 
 @NgModule({
   declarations: [ SignInComponent ],
-  imports: [ CommonModule, ReactiveFormsModule ]
+  imports: [ CommonModule, ReactiveFormsModule, VMessageModule ]
 })
 
 export class HomeModule{
