@@ -54,3 +54,15 @@ ficará no componente, e não no template. Isto é, programaremos as regras
 de validação, e por consequência teremos type checking, autocomplete,
 tudo que o TypeScript tem a nos oferecer.
 */
+
+
+/* AULA: Acesso do header de resposta
+Lógica por tras da autenticação
+
+  - Requisição para a API, e aguardar pelo objeto de resposta que representa o usuário (username e senha)
+  - Com o sucesso nós recebemos uma resposta (retorno da requisição)
+  - No cabeçalho da resposta, contém um x-access-token criptografado (base 64)
+  - Precisamo guardar este token, para utilzarmos em acessos que precisem de autorização
+  - O back-end sempre irá fazer a verificação do token, descriptografando-o
+  - Será sempre feita a verificação da validade do token, pois ele possui um tempo de validade
+*/
